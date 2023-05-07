@@ -6,6 +6,7 @@ import "./index.css";
 
 import Layout from "./layout";
 import NotFound from "./pages/not-found";
+import Subscribe from "./pages/subscribe";
 
 const routes = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const routes = createBrowserRouter([
       { path: "agents/agentId", element: <div>agent</div> },
       { path: "properties", element: <div>properties</div> },
       { path: "properties/propertyId", element: <div>property</div> },
-      { path: "subscribe", element: <div>subscribe</div> },
+      { path: "subscribe", element: <Subscribe /> },
       { path: "faqs", element: <div>faqs</div> },
       { path: "coming-soon", element: <div>coming soon</div> },
       { path: "*", element: <NotFound /> },
