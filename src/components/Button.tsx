@@ -21,7 +21,7 @@ function Button({
       onClick={onClick}
       className={`
       flex gap-2 items-center justify-center hover:opacity-90 transition-all 
-      capitalize text-lg font-medium p-3 rounded-lg
+      capitalize text-base md:text-lg font-medium p-3 rounded-lg
     text-gray-100 bg-stone-950 ${
       showAs && showAs === "primary"
         ? "bg-red-500"

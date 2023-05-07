@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./layout";
+import NotFound from "./pages/not-found";
 
 const routes = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const routes = createBrowserRouter([
       { path: "subscribe", element: <div>subscribe</div> },
       { path: "faqs", element: <div>faqs</div> },
       { path: "coming-soon", element: <div>coming soon</div> },
-      { path: "*", element: <div>not found</div> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);
