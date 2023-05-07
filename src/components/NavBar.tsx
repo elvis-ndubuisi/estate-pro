@@ -6,7 +6,7 @@ import Button from "./Button";
 function NavBar() {
   return (
     <header
-      className="max-w-screen-2xl mx-auto flex items-center
+      className="max-w-screen-xl mx-auto flex items-center
      text-stone-950 justify-between gap-6 py-3 md:py-5 lg:py-7 px-2"
     >
       <Brand />

@@ -4,7 +4,7 @@ import Brand from "./Brand";
 function Footer() {
   return (
     <footer className="bg-stone-950 text-gray-200 text-lg pt-6 md:pt-8 font-light">
-      <section className="max-w-screen-2xl mx-auto px-2 flex flex-col gap-7 md:flex-row">
+      <section className="max-w-screen-xl mx-auto px-2 flex flex-col gap-7 md:flex-row">
         <section className="flex-1">
           <Brand exStyle="text-white" />
           <p className="max-w-md">
