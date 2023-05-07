@@ -7,6 +7,7 @@ import "./index.css";
 import Layout from "./layout";
 import NotFound from "./pages/not-found";
 import Subscribe from "./pages/subscribe";
+import FAQs from "./pages/faqs";
 
 const routes = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const routes = createBrowserRouter([
       { path: "properties", element: <div>properties</div> },
       { path: "properties/propertyId", element: <div>property</div> },
       { path: "subscribe", element: <Subscribe /> },
-      { path: "faqs", element: <div>faqs</div> },
+      { path: "faqs", element: <FAQs /> },
       { path: "coming-soon", element: <div>coming soon</div> },
       { path: "*", element: <NotFound /> },
     ],
