@@ -5,7 +5,10 @@ import Button from "./Button";
 
 function NavBar() {
   return (
-    <header className="flex items-center justify-between gap-6 py-3 md:py-5 lg:py-7 px-2">
+    <header
+      className="max-w-screen-2xl mx-auto flex items-center
+     text-stone-950 justify-between gap-6 py-3 md:py-5 lg:py-7 px-2"
+    >
       <Brand />
 
       <nav className="flex-1 hidden md:flex items-center gap-6">

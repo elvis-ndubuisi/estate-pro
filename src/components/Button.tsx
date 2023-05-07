@@ -20,13 +20,13 @@ function Button({
       type={type}
       onClick={onClick}
       className={`
-      flex gap-2 items-center justify-center hover:opacity-80 transition-all 
+      flex gap-2 items-center justify-center hover:opacity-90 transition-all 
       capitalize text-lg font-medium p-3 rounded-lg
-    text-white bg-black ${
+    text-gray-100 bg-stone-950 ${
       showAs && showAs === "primary"
         ? "bg-red-500"
         : showAs === "outline"
-        ? "bg-white text-black border-2 border-red-500"
+        ? "bg-white text-stone-950 border-2 border-red-500"
         : null
     } ${exStyles}
       `}

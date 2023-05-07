@@ -4,7 +4,7 @@ type Prop = {
 
 function Brand({ exStyle }: Prop) {
   return (
-    <div className={`flex items-center gap-2 ${exStyle}`}>
+    <div className={`flex items-center gap-2 text-stone-950 ${exStyle}`}>
       {/* <img
         src=""
         alt="estate pro brand"
