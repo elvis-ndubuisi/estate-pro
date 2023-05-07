@@ -8,6 +8,7 @@ import Layout from "./layout";
 import NotFound from "./pages/not-found";
 import Subscribe from "./pages/subscribe";
 import FAQs from "./pages/faqs";
+import ComingSoon from "./pages/coming-soon";
 
 const routes = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const routes = createBrowserRouter([
       { path: "properties/propertyId", element: <div>property</div> },
       { path: "subscribe", element: <Subscribe /> },
       { path: "faqs", element: <FAQs /> },
-      { path: "coming-soon", element: <div>coming soon</div> },
+      { path: "coming-soon", element: <ComingSoon /> },
       { path: "*", element: <NotFound /> },
     ],
   },
