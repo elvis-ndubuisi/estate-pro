@@ -1,4 +1,4 @@
-import Subscribe from "../components/Subscribe";
+import SubscribeBanner from "../components/SubscribeBanner";
 import Button from "../components/Button";
 import notFoundIllustration from "../assets/404 error with portals-pana.svg";
 
@@ -25,7 +25,7 @@ function NotFound() {
           <Button showAs="outline">Browse Properties</Button>
         </div>
       </section>
-      <Subscribe />
+      <SubscribeBanner />
     </main>
   );
 }
