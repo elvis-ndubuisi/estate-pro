@@ -10,13 +10,14 @@ import Subscribe from "./pages/subscribe";
 import FAQs from "./pages/faqs";
 import ComingSoon from "./pages/coming-soon";
 import Contact from "./pages/contact";
+import Home from "./pages/home";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
-      { path: "", element: <div>home</div> },
+      { path: "", element: <Home /> },
       { path: "about-us", element: <div>about</div> },
       { path: "contact", element: <Contact /> },
       { path: "blogs", element: <div>blogs</div> },

@@ -9,8 +9,8 @@ function Accordion({ answer, question }: Props) {
   const [reveal, setReveal] = React.useState(false);
   return (
     <section
-      className={`flex flex-col gap-3 border-[3px] rounded-lg shadow px-3 py-5 hover:border-orange-500 focus:border-orange-500 transition-all ${
-        reveal && "border-orange-500"
+      className={`flex flex-col gap-3 border-[3px] rounded-lg shadow px-3 py-5 hover:border-red-500 focus:border-red-500 transition-all ${
+        reveal && "border-red-500"
       }`}
     >
       <header
