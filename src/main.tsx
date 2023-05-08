@@ -9,6 +9,7 @@ import NotFound from "./pages/not-found";
 import Subscribe from "./pages/subscribe";
 import FAQs from "./pages/faqs";
 import ComingSoon from "./pages/coming-soon";
+import Contact from "./pages/contact";
 
 const routes = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const routes = createBrowserRouter([
     children: [
       { path: "", element: <div>home</div> },
       { path: "about-us", element: <div>about</div> },
-      { path: "contact", element: <div>contact</div> },
+      { path: "contact", element: <Contact /> },
       { path: "blogs", element: <div>blogs</div> },
       { path: "blogs/:blogId", element: <div>blog</div> },
       { path: "agents", element: <div>agents</div> },
