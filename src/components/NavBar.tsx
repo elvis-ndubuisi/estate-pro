@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HiArrowRight } from "react-icons/hi2";
 
 import Brand from "./Brand";
 import Button from "./Button";
@@ -33,7 +34,10 @@ function NavBar() {
         </Link>
       </nav>
 
-      <Button exStyles="hidden md:flex">get started</Button>
+      <Button exStyles="hidden md:flex">
+        get started
+        <HiArrowRight />
+      </Button>
     </header>
   );
 }

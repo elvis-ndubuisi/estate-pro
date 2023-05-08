@@ -1,3 +1,5 @@
+import { SiHomebridge } from "react-icons/si";
+
 type Prop = {
   exStyle?: string;
 };
@@ -5,11 +7,7 @@ type Prop = {
 function Brand({ exStyle }: Prop) {
   return (
     <div className={`flex items-center gap-2 text-stone-950 ${exStyle}`}>
-      {/* <img
-        src=""
-        alt="estate pro brand"
-        className="max-w-[50px] object-contain aspect-square bg-grey-200"
-      /> */}
+      <SiHomebridge className="text-4xl text-red-500" />
       <h1 className="font-bold text-2xl">EstatePro</h1>
     </div>
   );
