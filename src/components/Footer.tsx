@@ -1,4 +1,12 @@
 import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
+
 import Brand from "./Brand";
 
 function Footer() {
@@ -20,23 +28,62 @@ function Footer() {
             </h3>
 
             <div className="flex flex-col gap-2 md:gap-4">
-              <Link to="/">Home</Link>
-              <Link to="about">About</Link>
-              <Link to="properties">Properties</Link>
-              <Link to="property">Properties Single</Link>
-              <Link to="agents">Agents</Link>
-              <Link to="agent">Agents Single</Link>
+              <Link to="/" className="hover:opacity-50 transition-opacity">
+                Home
+              </Link>
+              <Link to="about" className="hover:opacity-50 transition-opacity">
+                About
+              </Link>
+              <Link
+                to="properties"
+                className="hover:opacity-50 transition-opacity"
+              >
+                Properties
+              </Link>
+              <Link
+                to="property"
+                className="hover:opacity-50 transition-opacity"
+              >
+                Properties Single
+              </Link>
+              <Link to="agents" className="hover:opacity-50 transition-opacity">
+                Agents
+              </Link>
+              <Link to="agent" className="hover:opacity-50 transition-opacity">
+                Agents Single
+              </Link>
             </div>
           </section>
 
           <section className="md:self-end">
             <div className="flex flex-col gap-2 md:gap-4">
-              <Link to="blogs">Blog</Link>
-              <Link to="blog">Blog Post</Link>
-              <Link to="contact">Contact</Link>
-              <Link to="faqs">FAQS</Link>
-              <Link to="coming-soon">Coming Soon</Link>
-              <Link to="subscribe">Subscribe us</Link>
+              <Link to="blogs" className="hover:opacity-50 transition-opacity">
+                Blog
+              </Link>
+              <Link to="blog" className="hover:opacity-50 transition-opacity">
+                Blog Post
+              </Link>
+              <Link
+                to="contact"
+                className="hover:opacity-50 transition-opacity"
+              >
+                Contact
+              </Link>
+              <Link to="faqs" className="hover:opacity-50 transition-opacity">
+                FAQS
+              </Link>
+              <Link
+                to="coming-soon"
+                className="hover:opacity-50 transition-opacity"
+              >
+                Coming Soon
+              </Link>
+              <Link
+                to="subscribe"
+                className="hover:opacity-50 transition-opacity"
+              >
+                Subscribe us
+              </Link>
             </div>
           </section>
 
@@ -46,17 +93,57 @@ function Footer() {
             </h3>
 
             <div className="flex flex-col gap-2 md:gap-4">
-              <Link to="blogs">Facebook</Link>
-              <Link to="blog">Twitter</Link>
-              <Link to="contact">Instagram</Link>
-              <Link to="faqs">LinkedIn</Link>
-              <Link to="coming-soon">Youtube</Link>
+              <a
+                href="#"
+                className="flex items-center gap-2 hover:opacity-50 transition-opacity"
+              >
+                <span className="p-1 bg-stone-800 rounded">
+                  <FaFacebookF />
+                </span>
+                Facebook
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-2 hover:opacity-50 transition-opacity"
+              >
+                <span className="p-1 bg-stone-800 rounded">
+                  <FaTwitter />
+                </span>
+                Twitter
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-2 hover:opacity-50 transition-opacity"
+              >
+                <span className="p-1 bg-stone-800 rounded">
+                  <FaInstagram />
+                </span>
+                Instagram
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-2 hover:opacity-50 transition-opacity"
+              >
+                <span className="p-1 bg-stone-800 rounded">
+                  <FaLinkedinIn />
+                </span>
+                LinkedIn
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-2 hover:opacity-50 transition-opacity"
+              >
+                <span className="p-1 bg-stone-800 rounded">
+                  <FaYoutube />
+                </span>
+                Youtube
+              </a>
             </div>
           </section>
         </nav>
       </section>
 
-      <aside className="border-t-2 border-gray-50 py-5 mt-6">
+      <aside className="border-t border-neutral-800 py-5 mt-6">
         <p className="text-center text-base">
           Copyright &copy; EstatePro | Figma design by{" "}
           <a href="/" className="text-orange-600">
