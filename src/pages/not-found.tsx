@@ -1,6 +1,6 @@
 import SubscribeBanner from "../components/SubscribeBanner";
 import Button from "../components/Button";
-import notFoundIllustration from "../assets/404 error with portals-pana.svg";
+import notFoundIllustration from "../assets/illustrations/404 error with portals-pana.svg";
 import NavBar from "../components/NavBar";
 
 function NotFound() {

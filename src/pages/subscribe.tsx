@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import subscribeIllustration from "../assets/Envelope-rafiki.svg";
+import subscribeIllustration from "../assets/illustrations/Envelope-rafiki.svg";
 import NavBar from "../components/NavBar";
 
 function Subscribe() {

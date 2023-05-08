@@ -1,5 +1,5 @@
 import SubscribeBanner from "../components/SubscribeBanner";
-import constructionIllustration from "../assets/Construction truck-rafiki.svg";
+import constructionIllustration from "../assets/illustrations/Construction truck-rafiki.svg";
 import NavBar from "../components/NavBar";
 
 function ComingSoon() {
