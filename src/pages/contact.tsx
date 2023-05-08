@@ -39,15 +39,15 @@ function Contact() {
           </div>
 
           <form className="p-4 rounded-lg shadow-xl flex flex-col items-start gap-4 lg:flex-1 mt-6 lg:mt-0">
-            <legend className="flex flex-col gap-5 md:flex-row w-full">
+            <fieldset className="flex flex-col gap-5 md:flex-row w-full">
               <Input placeholder="enter name" exStyles="flex-1" />
               <Input placeholder="enter email" exStyles="flex-1" />
-            </legend>
+            </fieldset>
 
-            <legend className="flex flex-col gap-5 md:flex-row w-full">
+            <fieldset className="flex flex-col gap-5 md:flex-row w-full">
               <Input placeholder="enter phone number" exStyles="flex-1" />
               <Input placeholder="select option" exStyles="flex-1" />
-            </legend>
+            </fieldset>
 
             <Textarea placeholder="enter your message" exStyles="w-full" />
 
