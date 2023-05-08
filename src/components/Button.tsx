@@ -21,13 +21,13 @@ function Button({
       onClick={onClick}
       className={`
       flex gap-2 items-center justify-center hover:opacity-90 transition-all 
-      capitalize text-base md:text-lg font-medium p-3 rounded-lg
-    text-gray-100 bg-stone-950 ${
+      capitalize text-base md:text-lg font-medium py-2 px-3 rounded-lg
+    text-gray-100 ${
       showAs && showAs === "primary"
         ? "bg-red-500"
         : showAs === "outline"
         ? "bg-white text-stone-950 border-2 border-red-500"
-        : null
+        : "bg-stone-950"
     } ${exStyles}
       `}
     >
