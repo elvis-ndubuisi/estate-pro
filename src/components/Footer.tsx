@@ -31,7 +31,10 @@ function Footer() {
               <Link to="/" className="hover:opacity-50 transition-opacity">
                 Home
               </Link>
-              <Link to="about" className="hover:opacity-50 transition-opacity">
+              <Link
+                to="about-us"
+                className="hover:opacity-50 transition-opacity"
+              >
                 About
               </Link>
               <Link

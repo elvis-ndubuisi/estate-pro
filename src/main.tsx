@@ -11,6 +11,7 @@ import FAQs from "./pages/faqs";
 import ComingSoon from "./pages/coming-soon";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
+import AboutUs from "./pages/about-us";
 
 const routes = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const routes = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "", element: <Home /> },
-      { path: "about-us", element: <div>about</div> },
+      { path: "about-us", element: <AboutUs /> },
       { path: "contact", element: <Contact /> },
       { path: "blogs", element: <div>blogs</div> },
       { path: "blogs/:blogId", element: <div>blog</div> },

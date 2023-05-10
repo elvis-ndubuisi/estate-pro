@@ -63,7 +63,7 @@ function NavBar({ dark = false }: Props) {
       </nav>
 
       <Button exStyles={`hidden md:flex ${dark && "bg-white text-stone-950"}`}>
-        get started
+        Get Started
         <HiArrowRight />
       </Button>
 
