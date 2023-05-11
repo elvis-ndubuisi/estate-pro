@@ -5,8 +5,10 @@ const agents: {
   desc: string;
   mail: string;
   phone: string;
+  slug: string;
 }[] = [
   {
+    slug: "agent1",
     name: "tom holland",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/ZHvM3XIOHoE/300*300/",
@@ -15,6 +17,7 @@ const agents: {
     phone: "+223 99988002",
   },
   {
+    slug: "agent2",
     name: "scarllet johnson",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/UBJsHb3HLv8/300x300/",
@@ -23,6 +26,7 @@ const agents: {
     phone: "+234 330488785",
   },
   {
+    slug: "agent3",
     name: "Umar Idris",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/pAtA8xe_iVM/300x300/",
@@ -31,6 +35,7 @@ const agents: {
     phone: "-245 93385430",
   },
   {
+    slug: "agent4",
     name: "peter johnson",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/a19OVaa2rzA/300x300/",
@@ -39,6 +44,7 @@ const agents: {
     phone: "99220 0382894",
   },
   {
+    slug: "agent5",
     name: "Tommy cane",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/9UVmlIb0wJU/300x300/",
@@ -47,6 +53,7 @@ const agents: {
     phone: "320049 12331",
   },
   {
+    slug: "agent6",
     name: "holandia man",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image: "https://source.unsplash.com/6anudmpILw4/300x300/",

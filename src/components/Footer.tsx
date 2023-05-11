@@ -32,27 +32,33 @@ function Footer() {
                 Home
               </Link>
               <Link
-                to="about-us"
+                to="/about-us"
                 className="hover:opacity-50 transition-opacity"
               >
                 About
               </Link>
               <Link
-                to="properties"
+                to="/properties"
                 className="hover:opacity-50 transition-opacity"
               >
                 Properties
               </Link>
               <Link
-                to="property"
+                to="/properties/propertyId"
                 className="hover:opacity-50 transition-opacity"
               >
                 Properties Single
               </Link>
-              <Link to="agents" className="hover:opacity-50 transition-opacity">
+              <Link
+                to="/agents"
+                className="hover:opacity-50 transition-opacity"
+              >
                 Agents
               </Link>
-              <Link to="agent" className="hover:opacity-50 transition-opacity">
+              <Link
+                to="/agents/agentId"
+                className="hover:opacity-50 transition-opacity"
+              >
                 Agents Single
               </Link>
             </div>
@@ -63,26 +69,29 @@ function Footer() {
               <Link to="blogs" className="hover:opacity-50 transition-opacity">
                 Blog
               </Link>
-              <Link to="blog" className="hover:opacity-50 transition-opacity">
+              <Link
+                to="/blogs/blogId"
+                className="hover:opacity-50 transition-opacity"
+              >
                 Blog Post
               </Link>
               <Link
-                to="contact"
+                to="/contact"
                 className="hover:opacity-50 transition-opacity"
               >
                 Contact
               </Link>
-              <Link to="faqs" className="hover:opacity-50 transition-opacity">
+              <Link to="/faqs" className="hover:opacity-50 transition-opacity">
                 FAQS
               </Link>
               <Link
-                to="coming-soon"
+                to="/coming-soon"
                 className="hover:opacity-50 transition-opacity"
               >
                 Coming Soon
               </Link>
               <Link
-                to="subscribe"
+                to="/subscribe"
                 className="hover:opacity-50 transition-opacity"
               >
                 Subscribe us

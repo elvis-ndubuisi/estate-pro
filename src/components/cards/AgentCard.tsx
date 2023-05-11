@@ -1,5 +1,6 @@
 import { TiSocialLinkedin } from "react-icons/ti";
 import { BiPhone, BiMailSend } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 type Props = {
   image: string;
@@ -8,11 +9,15 @@ type Props = {
   desc: string;
   phone: string;
   mail: string;
+  slug?: string;
 };
 
-function AgentCard({ desc, image, name, role, mail, phone }: Props) {
+function AgentCard({ desc, image, name, role, mail, phone, slug }: Props) {
   return (
-    <section className="max-w-[23rem] w-full ring-2 ring-gray-400 rounded-md relative">
+    <Link
+      to={`/agents/${slug}`}
+      className="max-w-[23rem] w-full ring-2 ring-gray-400 rounded-md relative"
+    >
       <span className="inline-block absolute top-2 left-2 rounded-md px-3 py-2 bg-white text-stone-900 capitalize text-sm font-medium">
         {role}
       </span>
@@ -44,7 +49,7 @@ function AgentCard({ desc, image, name, role, mail, phone }: Props) {
           <a href="mailto:">{mail}</a>
         </div>
       </section>
-    </section>
+    </Link>
   );
 }
 
