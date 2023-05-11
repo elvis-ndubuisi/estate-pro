@@ -1,13 +1,18 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Button from "../components/Button";
-import AgentCard from "../components/cards/AgentCard";
 import agents from "../assets/data/agents";
+import ArticleCard from "../components/cards/ArticleCard";
+import blogs from "../assets/data/blogs";
+import MemberCard from "../components/cards/MemberCard";
+import SubscribeBanner from "../components/SubscribeBanner";
 
 import showcase from "../assets/houses/breno-assis-r3WAWU5Fi5Q-unsplash.jpg";
 
 function AboutUs() {
-  const agentId = React.useId();
+  const memberId = React.useId();
+  const articleId = React.useId();
+
   return (
     <>
       <NavBar />
@@ -31,9 +36,9 @@ function AboutUs() {
           </div>
         </div>
 
-        <section className="max-w-screen-xl mx-auto my-12 relative h-[47vh] md:h-[58vh] lg:h-[73vh]">
+        <section className="max-w-screen-xl mx-auto mt-12 mb-8 relative h-[47vh] md:h-[58vh] lg:h-[73vh]">
           <img
-            src={showcase}
+            src="https://source.unsplash.com/random/300x300/"
             alt="beautiful home"
             className="h-[60%] md:h-[70%] aspect-video w-full max-w-[70%] object-cover rounded-lg absolute top-0 left-0"
           />
@@ -78,13 +83,31 @@ function AboutUs() {
         </div>
       </section>
 
-      <section>
-        <h2>Meet our team members</h2>
-        <section>
+      <section className="px-2 py-16 bg-gray-100 my-16">
+        <h2 className="text-center font-semibold text-4xl">
+          Meet our team members
+        </h2>
+        <section className="flex flex-wrap justify-center gap-8 mt-12">
           {agents.map((agent, idx) => (
-            <AgentCard {...agent} key={`${idx}+${agentId}`} />
+            <MemberCard {...agent} key={`${idx}+${memberId}`} />
           ))}
         </section>
+      </section>
+
+      <section className="px-2 max-w-screen-xl mx-auto ">
+        <h2 className="font-semibold text-4xl mb-12">
+          Articles & <span className="block md:inline">Resources</span>
+        </h2>
+
+        <section className="flex flex-row flex-wrap gap-6 items-stretch justify-center">
+          {blogs.map((blog, idx) => (
+            <ArticleCard key={`${idx}-${articleId}`} {...blog} />
+          ))}
+        </section>
+      </section>
+
+      <section className="px-2">
+        <SubscribeBanner />
       </section>
     </>
   );

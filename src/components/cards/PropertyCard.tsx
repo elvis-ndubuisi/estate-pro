@@ -18,7 +18,7 @@ function PropertyCard({
   sqft,
 }: Props) {
   return (
-    <div className="max-w-[19rem] rounded-md overflow-hidden flex flex-col gap-4">
+    <div className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-4">
       <img
         src={image}
         alt="home snapshot"

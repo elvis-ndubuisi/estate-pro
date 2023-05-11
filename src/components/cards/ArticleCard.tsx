@@ -13,7 +13,7 @@ function ArticleCard({ date, slug, time, title, cover }: Props) {
   return (
     <Link
       to={`/blogs/${slug}`}
-      className="max-w-[19rem] rounded-md overflow-hidden flex flex-col gap-2 border border-gray-400"
+      className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-2 border border-gray-400"
     >
       <img
         src={cover}
