@@ -26,7 +26,7 @@ function NavBar({ dark = false }: Props) {
         </Link>
 
         <Link
-          to="about-us"
+          to="/about-us"
           className={`capitalize text-lg ${
             dark ? "text-gray-50" : "text-gray-700"
           }`}
@@ -35,7 +35,7 @@ function NavBar({ dark = false }: Props) {
         </Link>
 
         <Link
-          to="properties"
+          to="/properties"
           className={`capitalize text-lg ${
             dark ? "text-gray-50" : "text-gray-700"
           }`}
@@ -44,7 +44,7 @@ function NavBar({ dark = false }: Props) {
         </Link>
 
         <Link
-          to="agents"
+          to="/agents"
           className={`capitalize text-lg ${
             dark ? "text-gray-50" : "text-gray-700"
           }`}
@@ -53,7 +53,7 @@ function NavBar({ dark = false }: Props) {
         </Link>
 
         <Link
-          to="blogs"
+          to="/blogs"
           className={`capitalize text-lg ${
             dark ? "text-gray-50" : "text-gray-700"
           }`}
