@@ -15,6 +15,7 @@ import AboutUs from "./pages/about-us";
 import Blogs from "./pages/blogs";
 import Blog from "./pages/blog";
 import Agents from "./pages/agents";
+import Agent from "./pages/agent";
 
 const routes = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const routes = createBrowserRouter([
       { path: "blogs", element: <Blogs /> },
       { path: "blogs/:blogId", element: <Blog /> },
       { path: "agents", element: <Agents /> },
-      { path: "agents/:agentId", element: <div>agent</div> },
+      { path: "agents/:agentId", element: <Agent /> },
       { path: "properties", element: <div>properties</div> },
       { path: "properties/:propertyId", element: <div>property</div> },
       { path: "subscribe", element: <Subscribe /> },
