@@ -25,7 +25,7 @@ function Agent() {
         <section className="flex flex-col gap-8 lg:flex-row items-center">
           <img
             src={agent?.image}
-            className="min-h-[40vh] max-h-[65vh] aspect-[9/16] w-full max-w-sm rounded-lg mx-auto"
+            className="min-h-[40vh] max-h-[65vh] aspect-[9/16] w-full max-w-sm object-cover rounded-lg mx-auto"
           />
 
           <div className="lg:flex-1 text-center lg:text-left">
