@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { TbRulerMeasure, TbBed, TbBath } from "react-icons/tb";
 
 type Props = {
@@ -7,6 +8,7 @@ type Props = {
   bedrooms: number;
   location: string;
   bathrooms: number;
+  slug: string;
 };
 
 function PropertyCard({
@@ -16,9 +18,13 @@ function PropertyCard({
   location,
   price,
   sqft,
+  slug,
 }: Props) {
   return (
-    <div className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-4">
+    <Link
+      to={`/properties/${slug}`}
+      className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-4"
+    >
       <img
         src={image}
         alt="home snapshot"
@@ -44,7 +50,7 @@ function PropertyCard({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

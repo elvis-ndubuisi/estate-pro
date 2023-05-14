@@ -7,6 +7,7 @@ import img6 from "../../assets/houses/matt-wang-qtimGShZrNY-unsplash.jpg";
 
 const properties = [
   {
+    slug: "property1",
     image: img1,
     price: "40,897",
     sqft: 2500,
@@ -15,6 +16,7 @@ const properties = [
     bathrooms: 2,
   },
   {
+    slug: "property2",
     image: img2,
     price: "75,990",
     sqft: 3000,
@@ -23,6 +25,7 @@ const properties = [
     bathrooms: 3,
   },
   {
+    slug: "property3",
     image: img3,
     price: "99,435",
     sqft: 5550,
@@ -31,6 +34,7 @@ const properties = [
     location: "Imprest, Finland Vin",
   },
   {
+    slug: "property4",
     image: img4,
     price: "53,892",
     sqft: 2500,
@@ -39,6 +43,7 @@ const properties = [
     bathrooms: 3,
   },
   {
+    slug: "property5",
     image: img5,
     price: "89,345",
     sqft: 8000,
@@ -47,6 +52,7 @@ const properties = [
     location: "Cocos, Abuja India",
   },
   {
+    slug: "property6",
     image: img6,
     price: "43,892",
     sqft: 2100,

@@ -14,9 +14,11 @@ function Properties() {
     <>
       <NavBar />
       <main className="max-w-screen-xl mx-auto text-stone-950 flex flex-col gap-16 px-2">
-        <section className="mt-[18vh] max-w-3xl w-full mx-auto text-center">
-          <h1 className="font-semibold text-5xl mb-8">Browse Our Properties</h1>
-          <p className="text-gray-800">
+        <section className="mt-[18vh] text-center">
+          <h1 className="font-semibold text-4xl mb-8 max-w-3xl mx-auto">
+            Browse Our Properties
+          </h1>
+          <p className="text-gray-800 max-w-3xl mx-auto">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
             nam nobis deserunt cumque neque repudiandae perferendis, dolorum
             harum iusto. Molestiae?
@@ -35,7 +37,7 @@ function Properties() {
               About EstatePro
             </Button>
           </div>
-          <section className="bg-gray-100 rounded-md p-8 mx-2 flex items-center justify-center gap-4 flex-wrap">
+          <section className="bg-gray-200 rounded-md px-8 py-4 mx-2 flex items-center justify-center gap-4 flex-wrap">
             <Select
               htmlFor="location"
               options={[
