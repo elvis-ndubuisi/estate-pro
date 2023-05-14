@@ -17,6 +17,7 @@ import ArticleCard from "../components/cards/ArticleCard";
 import SubscribeBanner from "../components/SubscribeBanner";
 
 import ts from "../assets/houses/sean-pollock-PhYq704ffdA-unsplash.jpg";
+import Input from "../components/inputs/Input";
 
 function Home() {
   const propertyId = React.useId();
@@ -70,9 +71,15 @@ function Home() {
             alt="beautiful home"
             className="h-[65vh] aspect-square md:aspect-auto w-full object-cover rounded-lg"
           />
-          <section className="mt-3 bg-white rounded-md p-4 max-w-md mx-auto flex items-center md:mt-0 md:relative md:-translate-y-1/2 lg:-left-1/2 lg:translate-x-[55%]">
-            <FaMapMarkerAlt className="text-red-500 text-2xl" />
-            input
+          <section className="mt-3 bg-white rounded-md p-2 max-w-xl mx-auto flex justify-between items-center md:mt-0 md:relative md:-translate-y-1/2 lg:-left-1/2 lg:translate-x-[55%]">
+            <FaMapMarkerAlt className="text-red-500" size={28} />
+            <Input
+              placeholder="Search by location"
+              exStyles="focus:ring-0 hover:ring-0 bg-transparent text-stone-950 py-3"
+            />
+            <Button showAs="primary" exStyles="py-3">
+              Search Now
+            </Button>
           </section>
         </section>
       </section>
@@ -106,7 +113,7 @@ function Home() {
           <h2 className="text-4xl font-bold">Popular Resident</h2>
 
           <Link
-            to="/"
+            to="/properties"
             className="hidden text-base capitalize text-gray-700 md:flex items-center gap-4 hover:gap-2 transition-all ease-linear"
           >
             explore all
@@ -114,9 +121,8 @@ function Home() {
           </Link>
         </div>
 
-        {/* TODO: Add spacing btw cards for LG screen */}
         <div className="flex flex-wrap justify-center gap-6">
-          {properties.map((property, idx) => (
+          {properties.slice(0, 6).map((property, idx) => (
             <PropertyCard key={`${idx}-${propertyId}`} {...property} />
           ))}
         </div>
@@ -149,7 +155,7 @@ function Home() {
                 <hr />
                 <div className="flex items-center gap-3 text-gray-600">
                   <img
-                    src=""
+                    src="https://source.unsplash.com/ZHvM3XIOHoE/300*300/"
                     alt="clients profile"
                     className="w-14 bg-gray-600 aspect-square rounded-full object-cover object-center"
                   />
