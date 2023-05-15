@@ -26,7 +26,7 @@ function Properties() {
           <div className="my-8 flex items-center justify-center gap-4 flex-wrap">
             <Button
               showAs="primary"
-              onClick={() => navigate("/create-property")}
+              onClick={() => navigate("/properties/create-property")}
             >
               Post a property
             </Button>

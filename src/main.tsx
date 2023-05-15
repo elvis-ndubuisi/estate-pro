@@ -18,6 +18,7 @@ import Agents from "./pages/agents";
 import Agent from "./pages/agent";
 import Properties from "./pages/properties";
 import Property from "./pages/property";
+import PostProperty from "./pages/post-property";
 
 const routes = createBrowserRouter([
   {
@@ -32,7 +33,10 @@ const routes = createBrowserRouter([
       { path: "agents", element: <Agents /> },
       { path: "agents/:agentId", element: <Agent /> },
       { path: "properties", element: <Properties /> },
-      { path: "properties/create", element: <div>create property</div> },
+      {
+        path: "properties/create-property",
+        element: <PostProperty />,
+      },
       { path: "properties/:propertyId", element: <Property /> },
       { path: "subscribe", element: <Subscribe /> },
       { path: "faqs", element: <FAQs /> },
