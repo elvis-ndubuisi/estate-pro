@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { TiCalendarOutline, TiStopwatch } from "react-icons/ti";
 import { HiArrowRight } from "react-icons/hi2";
@@ -22,6 +22,8 @@ import Input from "../components/inputs/Input";
 function Home() {
   const propertyId = React.useId();
   const articleId = React.useId();
+  const navigate = useNavigate();
+
   return (
     <main>
       <NavBar dark={true} />
@@ -38,7 +40,9 @@ function Home() {
               And Minimalistic Dream House, Let's Discuss
             </p>
 
-            <Button showAs="primary">Get In touch</Button>
+            <Button showAs="primary" onClick={() => navigate("/contact")}>
+              Get In touch
+            </Button>
 
             <footer className="flex flex-col gap-6 md:flex-row md:gap-10">
               <div>
@@ -128,8 +132,7 @@ function Home() {
         </div>
       </section>
 
-      {/* TODO: Change bg-image */}
-      <section className="text-gray-900 py-20 bg-gray-300">
+      <section className="text-gray-900 py-20 bg-[url('/src/assets/pattern_jigsaw_1_1_0-0_0_1__ffffff_d4d4d4.png')]">
         <section className="px-2 max-w-screen-xl mx-auto">
           <h2 className="font-bold text-3xl">
             What our <span className="block md:inline">clients say</span>
@@ -169,15 +172,24 @@ function Home() {
           </section>
         </section>
 
-        <Button exStyles="mx-auto" showAs="primary">
+        <Button
+          exStyles="mx-auto"
+          showAs="primary"
+          onClick={() => navigate("/contact")}
+        >
           Get in touch
           <HiArrowRight size={18} />
         </Button>
       </section>
 
       <section className="px-3 max-w-screen-xl mx-auto my-16 lg:flex lg:items-center lg:gap-2 lg:justify-between">
-        <section>images</section>
-        <section>
+        <section className="lg:flex-1">
+          <img
+            src="https://source.unsplash.com/500x500/?nature,pool"
+            alt="search terms"
+          ></img>
+        </section>
+        <section className="lg:flex-1">
           <h3 className="font-semibold text-3xl my-8">
             Let Us Help You Find Your Dream Home
           </h3>
@@ -208,7 +220,7 @@ function Home() {
         </section>
       </section>
 
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 py-16 bg-[url('/src/assets/pattern_jigsaw_1_1_0-0_0_1__ffffff_d4d4d4.png')] ">
         <section className="px-2 max-w-screen-xl mx-auto ">
           <h2 className="font-bold text-3xl">
             Articles & <span className="block md:inline">Resources</span>

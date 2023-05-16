@@ -6,8 +6,6 @@ import { useParams } from "react-router-dom";
 import { TbBed, TbBath, TbResize } from "react-icons/tb";
 import Input from "../components/inputs/Input";
 
-import dummy from "../assets/houses/breno-assis-r3WAWU5Fi5Q-unsplash.jpg";
-
 function Property() {
   const params = useParams();
   const property = properties.find((p) => p.slug === params?.propertyId);
@@ -295,12 +293,12 @@ function Property() {
           </div>
         </section> */}
       </main>
-      <section className="bg-[#f4f4f4] py-16">
+      <section className="bg-[#f4f4f4] py-16 bg-[url('/src/assets/pattern_jigsaw_1_1_0-0_0_1__ffffff_d4d4d4.png')]">
         <section className="px-2 max-w-screen-xl mx-auto">
           <div className="flex items-center flex-wrap justify-between gap-6 mb-12">
             <h2 className="text-4xl font-semibold">Featured Properties</h2>
 
-            <Button exStyles="font-regular bg-white text-stone-950">
+            <Button exStyles="font-regular bg-white text-stone-950 border border-gray-300">
               Browse all
             </Button>
           </div>

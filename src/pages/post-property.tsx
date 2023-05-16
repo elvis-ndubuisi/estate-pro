@@ -1,5 +1,7 @@
 import Button from "../components/Button";
 import NavBar from "../components/NavBar";
+import SubscribeBanner from "../components/SubscribeBanner";
+import Input from "../components/inputs/Input";
 
 function PostProperty() {
   return (
@@ -24,8 +26,17 @@ function PostProperty() {
             </div>
           </div>
         </div>
+
+        <form className="max-w-5xl mx-auto flex flex-col gap-6">
+          <h3>Client Info</h3>
+          <fieldset>
+            <Input placeholder="Enter Your Full Name" />
+            <Input placeholder="Email Address" />
+            <Input placeholder="Your Phone Number" />
+          </fieldset>
+        </form>
       </main>
-      PostProperty
+      <SubscribeBanner />
     </>
   );
 }

@@ -83,7 +83,7 @@ function AboutUs() {
         </div>
       </section>
 
-      <section className="px-2 py-16 bg-gray-100 my-16">
+      <section className="px-2 py-16 bg-gray-100 my-16 bg-[url('/src/assets/pattern_jigsaw_1_1_0-0_0_1__ffffff_d4d4d4.png')]">
         <h2 className="text-center font-semibold text-4xl">
           Meet our team members
         </h2>
@@ -100,7 +100,7 @@ function AboutUs() {
         </h2>
 
         <section className="flex flex-row flex-wrap gap-6 items-stretch justify-center">
-          {blogs.map((blog, idx) => (
+          {blogs.slice(0, 3).map((blog, idx) => (
             <ArticleCard key={`${idx}-${articleId}`} {...blog} />
           ))}
         </section>

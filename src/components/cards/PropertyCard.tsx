@@ -23,7 +23,7 @@ function PropertyCard({
   return (
     <Link
       to={`/properties/${slug}`}
-      className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-4"
+      className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-4 bg-white border border-gray-300"
     >
       <img
         src={image}

@@ -13,12 +13,12 @@ function ArticleCard({ date, slug, time, title, cover }: Props) {
   return (
     <Link
       to={`/blogs/${slug}`}
-      className="max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-2 border border-gray-400"
+      className="bg-white max-w-[23rem] rounded-md overflow-hidden flex flex-col gap-2 border border-gray-400"
     >
       <img
         src={cover}
         alt="blog cover display"
-        className="h-3/4 w-full object-cover object-center rounded-md"
+        className="h-3/4 max-h-[250px] w-full object-cover object-center rounded-md"
       />
       <div className="px-5 py-3 text-gray-900">
         <h3 className="font-semibold leading-snug">{title}</h3>

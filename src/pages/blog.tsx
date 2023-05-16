@@ -1,7 +1,12 @@
 import NavBar from "../components/NavBar";
 import SubscribeBanner from "../components/SubscribeBanner";
+import blogs from "../assets/data/blogs";
+import { useParams } from "react-router-dom";
+import dummy from "../assets/houses/rowan-heuvel-bjej8BY1JYQ-unsplash.jpg";
 
 function Blog() {
+  const params = useParams();
+  const blog = blogs.find((b) => b.slug === params?.blogId);
   return (
     <>
       <NavBar />
@@ -14,7 +19,7 @@ function Blog() {
         </section>
 
         <img
-          src=""
+          src={blog?.cover}
           className="w-full max-h-[80vh] aspect-video rounded-md object-cover object-center"
         />
 
@@ -48,8 +53,8 @@ function Blog() {
           </p>
 
           <img
-            src=""
-            className="w-full aspect-video max-h-[50vh] roounded-md object-cover object-center"
+            src={dummy}
+            className="w-full aspect-video max-h-[50vh] rounded-md object-cover object-center"
           />
 
           <p className="text-gray-800 my-6">

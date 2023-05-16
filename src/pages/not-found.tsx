@@ -2,8 +2,11 @@ import SubscribeBanner from "../components/SubscribeBanner";
 import Button from "../components/Button";
 import notFoundIllustration from "../assets/illustrations/404 error with portals-pana.svg";
 import NavBar from "../components/NavBar";
+import { useNavigate } from "react-router-dom";
 
 function NotFound() {
+  const navigate = useNavigate();
+
   return (
     <>
       <NavBar />
@@ -24,8 +27,12 @@ function NotFound() {
           </p>
 
           <div className="flex items-center justify-center gap-6 flex-wrap">
-            <Button showAs="primary">Go to Home</Button>
-            <Button showAs="outline">Browse Properties</Button>
+            <Button showAs="primary" onClick={() => navigate("/")}>
+              Go to Home
+            </Button>
+            <Button showAs="outline" onClick={() => navigate("/properties")}>
+              Browse Properties
+            </Button>
           </div>
         </section>
         <SubscribeBanner />
